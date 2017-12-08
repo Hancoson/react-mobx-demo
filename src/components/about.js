@@ -1,7 +1,8 @@
 /**
- * @author Guoxing.Han(hancoson#163.com)
- * @time 2016/12/29.
- */
+ * @Author: Guoxing.han 
+ * @Date: 2017-12-08 17:24:32 
+ * @version 0.0.1 
+  */
 import React, { Component } from 'react'
 
 export default class About extends Component {

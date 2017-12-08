@@ -1,13 +1,15 @@
 /**
- * @author Guoxing.Han(hancoson#163.com)
- * @time 2016/12/29.
- */
+ * @Author: Guoxing.han 
+ * @Date: 2017-12-08 17:24:11 
+ * @version 0.0.1 
+  */
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 
-import {Menu, Icon} from 'antd';
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+import Router from './../../routers'
+
+import {Menu} from 'antd';
+
 export default class NavBar extends Component {
   constructor(porps) {
     super(porps);

@@ -1,22 +1,34 @@
 /**
- * @author Guoxing.Han(hancoson#163.com)
- * @time 2016/12/29.
- */
-import React, { Component } from 'react'
+ * @Author: Guoxing.han
+ * @Date: 2017-12-08 17:24:43
+ * @version 0.0.1
+  */
+import React, {Component} from 'react'
+import {observer, inject} from 'mobx-react'
+import DevTools from 'mobx-react-devtools';
 
-//import NavBar from './common/navBar'
+
+import NavBar from './common/navBar'
 import Footer from './common/footer'
 
-export default class App extends Component {
+class App extends Component {
+  constructor(props){
+    super(props)
+
+  }
   render() {
+    console.log(this)
     return (
       <div className="main">
-        {/* <NavBar pathname={this.props.location.pathname} /> */}
+        <NavBar/>
         <section className="main">
-          {this.props.children}
+          1213{this.props.children}
         </section>
-        <Footer />
+        <Footer/>
+        <DevTools/>
       </div>
     )
   }
 }
+
+export default inject("store")(observer(App))

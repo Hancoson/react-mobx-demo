@@ -1,8 +1,9 @@
 /**
- *
- * @author Guoxing.Han(hancoson#163.com)
- * @time 2017/1/10.
- */
+ * @Author: Guoxing.han 
+ * @Date: 2017-12-08 17:27:28 
+ * @version 0.0.1 
+*/
+
 //获取当天时间并格式化
 export const getDate = () => {
   let d = new Date();

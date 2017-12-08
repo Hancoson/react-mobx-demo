@@ -1,7 +1,8 @@
 /**
- * @author Guoxing.Han(hancoson#163.com)
- * @time 2017/01/06.
- */
+ * @Author: Guoxing.han 
+ * @Date: 2017-12-08 17:25:21 
+ * @version 0.0.1 
+  */
 import React, {Component} from 'react'
 import {Link} from 'react-router'
 import {Row, Col, Spin, Button, DatePicker} from 'antd';

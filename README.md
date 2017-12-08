@@ -1,9 +1,9 @@
 # React-Mobx Zhihu Daily
 > 一个React+Mobx版知乎日报 所有API均来自网络（若涉及侵权，请及时联系我删除）
 
-> _你觉得好就给个 Star 或者 Watch 吧，不要 Fork._
+> _你觉得好就给个 Star 或者 Watch 吧，不要 Fork.
 
-## 技术实现
+## Tech used
 - [x] React v16
 - [x] Mobx
 - [x] React-router v4
@@ -13,7 +13,7 @@
 - [x] antd
 - [x] babel
  
-## 运行
+## How to run
 - 安装 `npm install(yarn)`
 - 启动 `npm start`
 - 构建 `npm run build`
@@ -37,7 +37,7 @@
     └─style
 ```
 
-## API说明
+## API
 
 ### 1、获取单条消息
 - URL: `http://news-at.zhihu.com/api/4/news/{id}`

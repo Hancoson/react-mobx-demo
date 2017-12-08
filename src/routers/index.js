@@ -1,22 +1,22 @@
 /**
- * @Author: Guoxing.han 
- * @Date: 2017-12-07 15:11:35 
- * @version 0.0.1 
+ * @Author: Guoxing.han
+ * @Date: 2017-12-08 17:26:17
+ * @version 0.0.1
   */
-import React from 'react' // 引入react
-import {Route} from 'react-router' // 引入react路由
+import React from 'react'
+import {Route, Switch} from 'react-router-dom'
 
-import App from './../compontens/app'
-import Index from './../compontens/home'
-import About from './../compontens/about'
-import Items from './../containers/items'
-import Detail from './../containers/detail'
+import Index from './../components/home'
+import About from './../components/about'
+import Items from './../components/itemsList'
+import Detail from './../components/detail'
 
 export default(
-  <Route path="/" component={App}>
+  <Switch>
     <Route path="/" component={Index}/>
     <Route path="about" component={About}/>
     <Route path="items" component={Items}/>
     <Route path="news/:id" component={Detail}/>
-  </Route>
+    <Route render={() => <h1 className={styles.noMatch}>找不到此页面</h1>}/>
+  </Switch>
 )
