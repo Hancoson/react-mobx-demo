@@ -1,18 +1,17 @@
-# React-redux Zhihu Daily
+# React-Mobx Zhihu Daily
 > 一个React+Mobx版知乎日报 所有API均来自网络（若涉及侵权，请及时联系我删除）
 
 > _你觉得好就给个 Star 或者 Watch 吧，不要 Fork._
 
 ## 技术实现
-- [x] React
+- [x] React v16
 - [x] Mobx
-- [x] React-router
+- [x] React-router v4
 - [x] fetch
 - [x] ES6
 - [x] webpack
 - [x] antd
 - [x] babel
-- [x] react-hot-loader
  
 ## 运行
 - 安装 `npm install(yarn)`

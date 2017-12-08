@@ -9,7 +9,7 @@ export default class Footer extends Component {
     return (
       <footer>
         &copy;&nbsp;
-        <a href="http://www.vsoui.com" target="_blank">Haley</a>
+        <a href="http://www.vsoui.com" rel="noopener noreferrer" target="_blank">Haley</a>
       </footer>
     )
   }

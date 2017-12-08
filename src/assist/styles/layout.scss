@@ -1,0 +1,41 @@
+/**
+* 
+* @author Guoxing.Han(hancoson#163.com)
+* @time 2016/11/14.
+*/
+@import 'variables';
+body{
+}
+.main{
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
+}
+section{
+  @extend .border-box;
+  width: 100%;
+  margin-top: 40px;
+}
+
+
+.index-warp{
+  text-align: center;
+  padding: 100px 0
+}
+
+
+footer{
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  color: #999;
+  font-size: 13px;
+  background: #fff;
+  border-top:#f0f0f0 1px solid;
+  margin-top: 20px;
+}
+
+.loading{
+  margin: 100px auto;
+  text-align: center;
+}

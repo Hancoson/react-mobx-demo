@@ -4,14 +4,14 @@
  */
 import React, { Component } from 'react'
 
-import NavBar from './common/navBar'
+//import NavBar from './common/navBar'
 import Footer from './common/footer'
 
 export default class App extends Component {
   render() {
     return (
       <div className="main">
-        <NavBar pathname={this.props.location.pathname} />
+        {/* <NavBar pathname={this.props.location.pathname} /> */}
         <section className="main">
           {this.props.children}
         </section>

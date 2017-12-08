@@ -3,7 +3,7 @@
  * @Date: 2017-12-07 15:46:16
  * @version 0.0.1
   */
-import {observable, action} from 'mobx';
+import {observable} from 'mobx';
 
 class HomeStore {
   @observable text;

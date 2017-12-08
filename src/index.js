@@ -1,16 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import routes from './routes'  
-import {BrowserRouter} from 'react-router-dom'
+import {useStrict} from 'mobx';
+import {BrowserRouter as Router} from 'react-router-dom'
 import { Provider } from 'mobx-react';
-
 import * as stores from './store';
 
-import './index.scss';
+import App from './components/App'
+
+import './assist/styles/main.scss';
 import registerServiceWorker from './registerServiceWorker';
+
+useStrict(true)
 
 ReactDOM.render(
   <Provider {...stores}>
-  <BrowserRouter history={history} routes={routes}/>
+  <Router basename = '/'>
+    <App />
+  </Router>
 </Provider>, document.getElementById('root'));
 registerServiceWorker();
