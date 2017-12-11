@@ -9,14 +9,15 @@ import {Route, Switch} from 'react-router-dom'
 import Index from './../components/home'
 import About from './../components/about'
 import Items from './../components/itemsList'
-import Detail from './../components/detail'
+//import Detail from './../components/detail'
 
-export default(
+const Main = () => (
   <Switch>
-    <Route path="/" component={Index}/>
-    <Route path="about" component={About}/>
-    <Route path="items" component={Items}/>
-    <Route path="news/:id" component={Detail}/>
-    <Route render={() => <h1 className={styles.noMatch}>找不到此页面</h1>}/>
+    <Route exact path="/" render={(props) => (<Index {...props}/>)}/>
+    <Route path="/about" component={About}/>
+    <Route path="/items" component={Items}/> {/* <Route path="/news/:id" component={Detail}/> */}
+    <Route render={() => <h1>找不到此页面</h1>}/>
   </Switch>
 )
+
+export default Main;

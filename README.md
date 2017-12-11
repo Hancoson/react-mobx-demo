@@ -87,3 +87,18 @@
 YAHOO:'https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20json%20where%20url=%22',
 YAHOO_SUFFIX:'%22&format=json'
 ```
+
+## How to use Mobx
+
+You can add the `transform-decorators-legacy` yourself in `node_modules/react-scripts/config/babel.dev.js`,like this: 
+
+- add this code into `presets`:
+
+```
+require.resolve('babel-preset-stage-1'),
+require.resolve('babel-preset-es2015')
+```
+- add this code into `plugins` first line:
+```
+require.resolve('babel-plugin-transform-decorators-legacy'),
+```

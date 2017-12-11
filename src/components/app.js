@@ -5,25 +5,24 @@
   */
 import React, {Component} from 'react'
 import {observer, inject} from 'mobx-react'
+import {withRouter} from 'react-router-dom'
 import DevTools from 'mobx-react-devtools';
 
+import Main from './../routers';
 
-import NavBar from './common/navBar'
+import Header from './common/header'
 import Footer from './common/footer'
 
+@withRouter @inject('store')@observer
 class App extends Component {
-  constructor(props){
-    super(props)
 
-  }
   render() {
-    console.log(this)
     return (
       <div className="main">
-        <NavBar/>
-        <section className="main">
-          1213{this.props.children}
-        </section>
+        <Header/>
+
+        <Main/> 
+
         <Footer/>
         <DevTools/>
       </div>
@@ -31,4 +30,4 @@ class App extends Component {
   }
 }
 
-export default inject("store")(observer(App))
+export default App

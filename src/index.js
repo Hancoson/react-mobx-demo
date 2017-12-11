@@ -11,10 +11,10 @@ import './assist/styles/main.css';
 import registerServiceWorker from './registerServiceWorker';
 
 useStrict(true)
-console.log(stores)
+
 ReactDOM.render(
   <Provider store={stores}>
-  <Router basename="/">
+  <Router>
     <App/>
   </Router>
 </Provider>, document.getElementById('root'));

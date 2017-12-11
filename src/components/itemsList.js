@@ -9,9 +9,6 @@ import {Row, Col, Spin, Button, DatePicker} from 'antd';
 import {subString, timeClear} from './../utils/getDate'
 
 export default class Items extends Component {
-  constructor(porps) {
-    super(porps);
-  }
 
   disabledDate(current) {
     // can not select days before today and today
@@ -50,7 +47,7 @@ export default class Items extends Component {
                     .stories
                     .map((e, index) => <Col className="gutter-row" span={6} key={index}>
                       <Link className="item" to={'news/' + e.id}>
-                        <img src={e.images}/>
+                        <img src={e.images} role="presentation" />
                         <p>{e.title}</p>
                         <sub>{subString(list.date)}</sub>
                       </Link>

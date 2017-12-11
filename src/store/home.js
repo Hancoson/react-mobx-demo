@@ -3,14 +3,13 @@
  * @Date: 2017-12-07 15:46:16
  * @version 0.0.1
   */
-import {extendObservable} from 'mobx';
+import {observable} from 'mobx';
 
 class HomeStore {
+  @observable text = '';
 
-  construtor() {
-    extendObservable(this,{
-      text: 'Hello Word'
-    })
+  constructor() {
+    this.text = 'Hello Word!'
   }
 }
 const homeStore = new HomeStore()
