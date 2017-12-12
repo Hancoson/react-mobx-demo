@@ -11,6 +11,7 @@ export default class Header extends Component {
   constructor(porps) {
     super(porps);
 
+    console.log(this.props)
     this.state = {
       current: this.props.pathname === '/'
         ? '/index'
@@ -20,7 +21,8 @@ export default class Header extends Component {
 
   handleClick(e) {
     console.log('click ', e);
-    this.setState({current: e.key});
+    if(e.key !== this.state.current)
+      this.setState({current: e.key});
   }
 
   render() {
