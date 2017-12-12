@@ -25,25 +25,28 @@ export default class Header extends Component {
 
   render() {
     return (
-      <nav>
-        <Menu
-          onClick={this
-          .handleClick
-          .bind(this)}
-          selectedKeys={[this.state.current]}
-          mode="horizontal">
-          <Menu.Item key="/index">
-            <Link to="/"><span>首页</span></Link>
-          </Menu.Item>
-          <Menu.Item key="/items">
-            <Link to="/items"><span>文章</span></Link>
-          </Menu.Item>
-          <Menu.Item key="/about">
-            <Link to="/about"><span>关于</span></Link>
-          </Menu.Item>
-        </Menu>
-
-      </nav>
+      <Menu
+        onClick={this
+        .handleClick
+        .bind(this)}
+        selectedKeys={[this.state.current]}
+        mode="horizontal">
+        <Menu.Item key="/index">
+          <Link to="/">
+            <span>首页</span>
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="/items">
+          <Link to="/items">
+            <span>文章</span>
+          </Link>
+        </Menu.Item>
+        <Menu.Item key="/about">
+          <Link to="/about">
+            <span>关于</span>
+          </Link>
+        </Menu.Item>
+      </Menu>
     )
   }
 }
