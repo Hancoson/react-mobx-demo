@@ -14,32 +14,30 @@ import {getDate, subString, timeClear} from './../utils/getDate'
 export default class Items extends Component {
   constructor(props) {
     super(props)
-    this.store = props.store
+    this.store = props.store.itemsStore
   }
 
   disabledDate(current) {
-    // can not select days before today and today
     return current && current.valueOf() > Date.now();
   }
 
   handleClick(value, dateString) {
-    const {fetchData, emptyData} = this.props.store.itemsStore;
+    const {fetchData, emptyData} = this.store;
     emptyData()
     fetchData(timeClear(dateString));
   }
 
   componentWillMount() {
-    const {emptyData} = this.props.store.itemsStore;
+    const {emptyData} = this.store;
 
     //清空原有的数据
     emptyData()
   }
 
   render() {
-    const {items, emptyData, total} = this.props.store.itemsStore
+    const {items, dataTime, emptyData, total} = this.store
     const list = items
 
-    console.log(list)
     return (
       <div className='items-warp'>
         <div className='bar clearfix'>
@@ -58,7 +56,7 @@ export default class Items extends Component {
                   <Link className="item" to={'news/' + e.id}>
                     <img src={e.images} role="presentation"/>
                     <p>{e.title}</p>
-                    <sub>{subString(list.date)}</sub>
+                    <sub>{subString(dataTime)}</sub>
                   </Link>
                 </Col>)}
               </Row>
@@ -68,7 +66,6 @@ export default class Items extends Component {
             }
 
           </div>
-          {/*<ItemsList list={items}/>*/}
         </div>
       </div>
 

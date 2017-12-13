@@ -16,7 +16,7 @@ const Main = () => (
     <Route exact path="/" render={(props) => (<Index {...props}/>)}/>
     <Route path="/about" component={About}/>
     <Route path="/items" render={(props) => (<Items {...props}/>)}/>
-    <Route path="/news/:id" component={Detail}/>
+    <Route exact path="/news/:id" render={(props) => (<Detail {...props}/>)}/>
     <Route render={() => <h1>找不到此页面</h1>}/>
   </Switch>
 )

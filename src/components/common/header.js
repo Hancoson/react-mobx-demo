@@ -11,7 +11,6 @@ export default class Header extends Component {
   constructor(porps) {
     super(porps);
 
-    console.log(this.props)
     this.state = {
       current: this.props.pathname === '/'
         ? '/index'

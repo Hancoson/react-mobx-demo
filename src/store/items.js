@@ -9,9 +9,11 @@ import Config from './../config/config'
 
 class ItemsStore {
   @observable items;
+  @observable dataTime;
 
   constructor() {
     this.items = []
+    this.dataTime = ''
   }
 
   @computed get total() {
@@ -21,15 +23,21 @@ class ItemsStore {
 
   @action
   fetchData = (time) => {
+    fetch(Config.YAHOO + Config.API + time + Config.YAHOO_SUFFIX).then(
 
-    fetch(Config.YAHOO + Config.API + time + Config.YAHOO_SUFFIX).then(res => {
-      return res.json()
-    }).then(data => {
-      this.items = data.query.results.json.stories;
-      console.log(data)
-    }).catch(e => {
-      console.log(e.message)
-    })
+      action('fetchRes', res => {
+        return res.json()
+      })).then(
+
+      action('fetchSuccess', data => {
+        this.items = data.query.results.json.stories;
+        this.dataTime = data.query.results.json.date;
+
+      })).catch(
+
+      action('fetchError', e => {
+        console.log(e.message)
+      }))
   }
 
   @action

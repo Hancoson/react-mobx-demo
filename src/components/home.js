@@ -10,17 +10,30 @@ import {inject, observer} from "mobx-react";
 export default class Index extends Component {
   constructor(props) {
     super(props)
-    this.store = props.store
+    this.store = props.store.homeStore
+    this.plus = this.store.plus
+    this.minus = this.store.minus
   }
 
   render() {
-    const {text} = this.store.homeStore
+    const {text,num} = this.store
     return (
-      <div className='index-warp'><span>{text}</span></div>
+      <div>
+        <div className='index-warp'><span>{text}</span></div>
+        <div style={{textAlign: 'center'}}>
+          <span style={{background: '#666', color: '#fff', padding: '5px'}} onClick={this.minusHandle.bind(this)}>-</span>
+          <span>{num}</span>
+          <span style={{background: '#666', color: '#fff', padding: '5px'}} onClick={this.plusHandle.bind(this)}>+</span>
+        </div>
+      </div>
     )
   }
-  s(){
-    this.store.homeStore.adb()
+
+  plusHandle() {
+    this.plus()
+  }
+  minusHandle() {
+    this.minus()
   }
 
 }

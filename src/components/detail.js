@@ -6,25 +6,31 @@
 import React, { Component } from 'react'
 import { Spin } from 'antd';
 import { isEmptyObject } from './../utils/objectEmpty'
+import {inject, observer} from "mobx-react";
 
+@inject("store") @observer
 export default class Detail extends Component {
+  constructor(props){
+    super(props)
+    this._id = props.match.params.id
+    this.store = props.store.detailStore
+  }
   componentWillMount() {
-    const { fetchDetailData, emptyData } = this.props;
+    const { fetchDetailData, emptyData } = this.store;
     //调取数据
-    fetchDetailData(this.props.params.id)
+    fetchDetailData(this._id)
     //清空原有的数据
     emptyData()
   }
 
   createMarkup() {
-    var _fonts = this.props.detail.body;
+    var _fonts = this.store.detail.body;
     return { __html: _fonts };
   }
 
   render() {
-    const _o = this.props.detail;
+    const _o = this.store.detail;
 
-    console.log(isEmptyObject({}))
     return (
       <div>
         {

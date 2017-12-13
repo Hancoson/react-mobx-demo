@@ -10,7 +10,7 @@ import App from './components/App'
 import './assist/styles/main.css';
 import registerServiceWorker from './registerServiceWorker';
 
-useStrict(true)
+useStrict(true) // 不允许在动作之外进行状态修改
 
 ReactDOM.render(
   <Provider store={stores}>
