@@ -19,7 +19,6 @@ export default class Header extends Component {
   }
 
   handleClick(e) {
-    console.log('click ', e);
     if(e.key !== this.state.current)
       this.setState({current: e.key});
   }

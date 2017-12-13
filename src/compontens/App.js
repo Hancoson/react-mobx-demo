@@ -17,7 +17,6 @@ import Footer from './common/footer'
 class App extends Component {
 
   render() {
-    console.log(this)
     return (
       <div className="main">
         <Header {...this.props.location}/>
