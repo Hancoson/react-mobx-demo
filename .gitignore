@@ -8,7 +8,7 @@
 
 # production
 # /build
-# /build/manifest.json
+/build/manifest.json
 
 # misc
 .idea
