@@ -6,10 +6,10 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 
-import Index from './../components/home'
-import About from './../components/about'
-import Items from './../components/itemsList'
-import Detail from './../components/detail'
+import Index from './../compontens/home'
+import About from './../compontens/about'
+import Items from './../compontens/itemsList'
+import Detail from './../compontens/detail'
 
 const Main = () => (
   <Switch>

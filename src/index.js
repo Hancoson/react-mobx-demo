@@ -5,7 +5,7 @@ import {HashRouter as Router} from 'react-router-dom'
 import {Provider} from 'mobx-react';
 import * as stores from './store';
 
-import App from './components/App'
+import App from './compontens/App'
 
 import './assist/styles/main.css';
 import registerServiceWorker from './registerServiceWorker';
