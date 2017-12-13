@@ -90,7 +90,7 @@ YAHOO_SUFFIX:'%22&format=json'
 
 ## How to use Mobx
 
-You can add the `transform-decorators-legacy` yourself in `node_modules/react-scripts/config/babel.dev.js`,like this: 
+You can add the `transform-decorators-legacy` yourself in `node_modules/react-scripts/config/babel.dev.js` and `babel.prod.js`,like this:
 
 - add this code into `presets`:
 
