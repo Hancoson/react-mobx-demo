@@ -21,7 +21,7 @@ If something doesn’t work, please [file an issue](https://github.com/Hancoson/
 - Run: `npm start` Then open [http://localhost:3000](http://localhost:3000/) to see the app.
 - Build: `npm run build`
  
-## 目录结构
+## Tree
 ```$xslt
 ├─config
 ├─src
