@@ -1,6 +1,8 @@
 # React-Mobx Zhihu Daily
 
 ### [DEMO](https://hancoson.github.io/react-mobx-demo/build/index.html)
+
+### [Redux come true](https://github.com/Hancoson/react-redux-demo)
 ### [中文](https://github.com/Hancoson/react-mobx-demo/blob/master/README-zh.md)
 
 If something doesn’t work, please [file an issue](https://github.com/Hancoson/react-mobx-demo/issues).
