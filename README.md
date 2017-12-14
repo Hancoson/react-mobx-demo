@@ -1,4 +1,5 @@
 # React-Mobx Zhihu Daily
+[![GitHub license](https://img.shields.io/github/license/Hancoson/react-mobx-demo.svg)](https://github.com/Hancoson/react-mobx-demo/blob/master/LICENSE)
 
 ### [DEMO](https://hancoson.github.io/react-mobx-demo/build/index.html)
 
