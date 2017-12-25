@@ -1,3 +1,8 @@
+/**
+ * @Author: Guoxing.han 
+ * @Date: 2017-12-25 17:23:43 
+ * @version 0.0.1 
+  */
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {useStrict} from 'mobx';
