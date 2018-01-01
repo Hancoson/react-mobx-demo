@@ -50,6 +50,8 @@ YAHOO_SUFFIX:'%22&format=json'
 
 ## 如何使用 Mobx（Decorators）
 
+> 我使用了`create-react-app`脚手架创建应用。
+
 你可以添加 `transform-decorators-legacy` 到你的 `node_modules/react-scripts/config/babel.dev.js` 和 `babel.prod.js`,代码如下:
 
 - 添加下面的代码到 `presets`:

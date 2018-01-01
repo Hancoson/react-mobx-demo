@@ -52,6 +52,8 @@ YAHOO_SUFFIX:'%22&format=json'
 
 ## How to use Mobx（Decorators）
 
+> I use the `creat-react-app` to creat my app.
+
 You can add the `transform-decorators-legacy` yourself in `node_modules/react-scripts/config/babel.dev.js` and `babel.prod.js`,like this:
 
 - add this code into `presets`:
