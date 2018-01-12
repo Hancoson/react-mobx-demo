@@ -3,9 +3,10 @@
  * @Date: 2017-12-11 16:48:57
  * @version 0.0.1
  */
-import {observable, action, computed} from 'mobx';
+import {observable, action, computed, autorun} from 'mobx';
 
 import Config from './../config/config'
+import {getDate, subString, timeClear} from './../utils/getDate'
 
 class ItemsStore {
   @observable items;
@@ -19,7 +20,6 @@ class ItemsStore {
   @computed get total() {
     return this.items.length;
   }
-
 
   @action
   fetchData = (time) => {
@@ -44,6 +44,8 @@ class ItemsStore {
   emptyData = () => {
     this.items = []
   }
+
+ defaultDate = autorun((e) => this.fetchData(getDate()))
 }
 
 const itemsStore = new ItemsStore()

@@ -14,6 +14,7 @@ import {getDate, subString, timeClear} from './../utils/getDate'
 export default class Items extends Component {
   constructor(props) {
     super(props)
+    console.log(props)
     this.store = props.store.itemsStore
   }
 
@@ -70,11 +71,5 @@ export default class Items extends Component {
       </div>
 
     )
-  }
-
-  componentDidMount() {
-    const {fetchData} = this.props.store.itemsStore;
-    //默认调取数据
-    fetchData(getDate())
   }
 }
