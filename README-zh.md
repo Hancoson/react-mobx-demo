@@ -7,7 +7,7 @@
 > _你觉得好就给个 Star 或者 Watch 吧，不要 Fork.
 
 ## 技术栈
-- [x] React v16
+- [x] React v15
 - [x] Mobx v2.5
 - [x] Mobx-react
 - [x] React-router v4

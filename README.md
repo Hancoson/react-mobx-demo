@@ -10,7 +10,7 @@
 If something doesn’t work, please [file an issue](https://github.com/Hancoson/react-mobx-demo/issues).
 
 ## Tech used
-- [x] React v16
+- [x] React v15
 - [x] Mobx v2.5
 - [x] Mobx-react
 - [x] React-router v4

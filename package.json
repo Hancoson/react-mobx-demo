@@ -1,6 +1,6 @@
 {
   "name": "react-mobx-demo",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Get started with React, Mobx, and React-Router to achieve a Zhihu Daily App.",
   "author": "Hancoson <hancoson@163.com> (http://github.com/hancoson)",
   "license": "MIT",
