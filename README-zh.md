@@ -1,8 +1,12 @@
 # React-Mobx Zhihu Daily
+[![GitHub package version](https://img.shields.io/github/package-json/v/Hancoson/react-mobx-demo.svg)](https://github.com/Hancoson/react-mobx-demo)
+[![GitHub license](https://img.shields.io/github/license/Hancoson/react-mobx-demo.svg)](https://github.com/Hancoson/react-mobx-demo/blob/master/LICENSE)
+[![Travis](https://img.shields.io/travis/Hancoson/react-mobx-demo/master.svg)](https://travis-ci.org/Hancoson/react-mobx-demo)
 
 ### [DEMO](https://hancoson.github.io/react-mobx-demo/build/index.html)
 
 ### [Redux实现](https://github.com/Hancoson/react-redux-demo)
+### [英文](https://github.com/Hancoson/react-mobx-demo/blob/master/README.md):uk:
 > 一个React+Mobx版知乎日报 所有API均来自网络（若涉及侵权，请及时联系我删除）
 > _你觉得好就给个 Star 或者 Watch 吧，不要 Fork.
 

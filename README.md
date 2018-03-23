@@ -1,11 +1,12 @@
 # React-Mobx Zhihu Daily
+[![GitHub package version](https://img.shields.io/github/package-json/v/Hancoson/react-mobx-demo.svg)](https://github.com/Hancoson/react-mobx-demo)
 [![GitHub license](https://img.shields.io/github/license/Hancoson/react-mobx-demo.svg)](https://github.com/Hancoson/react-mobx-demo/blob/master/LICENSE)
 [![Travis](https://img.shields.io/travis/Hancoson/react-mobx-demo/master.svg)](https://travis-ci.org/Hancoson/react-mobx-demo)
 
 ### [DEMO](https://hancoson.github.io/react-mobx-demo/build/index.html)
 
 ### [Redux come true](https://github.com/Hancoson/react-redux-demo)
-### [中文](https://github.com/Hancoson/react-mobx-demo/blob/master/README-zh.md)
+### [中文](https://github.com/Hancoson/react-mobx-demo/blob/master/README-zh.md):cn:
 
 If something doesn’t work, please [file an issue](https://github.com/Hancoson/react-mobx-demo/issues).
 
