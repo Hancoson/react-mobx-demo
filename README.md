@@ -2,6 +2,7 @@
 [![GitHub package version](https://img.shields.io/github/package-json/v/Hancoson/react-mobx-demo.svg)](https://github.com/Hancoson/react-mobx-demo)
 [![GitHub license](https://img.shields.io/github/license/Hancoson/react-mobx-demo.svg)](https://github.com/Hancoson/react-mobx-demo/blob/master/LICENSE)
 [![Travis](https://img.shields.io/travis/Hancoson/react-mobx-demo/master.svg)](https://travis-ci.org/Hancoson/react-mobx-demo)
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)](https://github.com/Hancoson/react-mobx-demo)
 
 ### [DEMO](https://hancoson.github.io/react-mobx-demo/build/index.html)
 
